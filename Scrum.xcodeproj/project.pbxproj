@@ -14,6 +14,12 @@
 		092FE50827DD54D8007A1768 /* ScrumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FE50727DD54D8007A1768 /* ScrumTests.swift */; };
 		092FE51227DD54D8007A1768 /* ScrumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FE51127DD54D8007A1768 /* ScrumUITests.swift */; };
 		092FE51427DD54D8007A1768 /* ScrumUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FE51327DD54D8007A1768 /* ScrumUITestsLaunchTests.swift */; };
+		092FE52127DD5541007A1768 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FE52027DD5541007A1768 /* WorkoutView.swift */; };
+		092FE52527DD5628007A1768 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FE52427DD5628007A1768 /* Theme.swift */; };
+		092FE52727DD56CB007A1768 /* DailyWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FE52627DD56CB007A1768 /* DailyWorkout.swift */; };
+		092FE52927DD597B007A1768 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FE52827DD597B007A1768 /* CardView.swift */; };
+		092FE52B27DD73CA007A1768 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FE52A27DD73C9007A1768 /* TrailingIconLabelStyle.swift */; };
+		092FE52D27DD8068007A1768 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FE52C27DD8068007A1768 /* WorkoutDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		092FE50D27DD54D8007A1768 /* ScrumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		092FE51127DD54D8007A1768 /* ScrumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumUITests.swift; sourceTree = "<group>"; };
 		092FE51327DD54D8007A1768 /* ScrumUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		092FE52027DD5541007A1768 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		092FE52427DD5628007A1768 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		092FE52627DD56CB007A1768 /* DailyWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWorkout.swift; sourceTree = "<group>"; };
+		092FE52827DD597B007A1768 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		092FE52A27DD73C9007A1768 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		092FE52C27DD8068007A1768 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +106,11 @@
 		092FE4F527DD54D6007A1768 /* Scrum */ = {
 			isa = PBXGroup;
 			children = (
+				092FE52327DD5607007A1768 /* Models */,
 				092FE4F627DD54D6007A1768 /* ScrumApp.swift */,
-				092FE4F827DD54D6007A1768 /* ContentView.swift */,
 				092FE4FA27DD54D8007A1768 /* Assets.xcassets */,
 				092FE4FC27DD54D8007A1768 /* Preview Content */,
+				092FE52227DD5550007A1768 /* View */,
 			);
 			path = Scrum;
 			sourceTree = "<group>";
@@ -125,6 +138,27 @@
 				092FE51327DD54D8007A1768 /* ScrumUITestsLaunchTests.swift */,
 			);
 			path = ScrumUITests;
+			sourceTree = "<group>";
+		};
+		092FE52227DD5550007A1768 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				092FE4F827DD54D6007A1768 /* ContentView.swift */,
+				092FE52027DD5541007A1768 /* WorkoutView.swift */,
+				092FE52827DD597B007A1768 /* CardView.swift */,
+				092FE52A27DD73C9007A1768 /* TrailingIconLabelStyle.swift */,
+				092FE52C27DD8068007A1768 /* WorkoutDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		092FE52327DD5607007A1768 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				092FE52427DD5628007A1768 /* Theme.swift */,
+				092FE52627DD56CB007A1768 /* DailyWorkout.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +292,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				092FE4F927DD54D6007A1768 /* ContentView.swift in Sources */,
+				092FE52527DD5628007A1768 /* Theme.swift in Sources */,
+				092FE52127DD5541007A1768 /* WorkoutView.swift in Sources */,
+				092FE52D27DD8068007A1768 /* WorkoutDetailView.swift in Sources */,
 				092FE4F727DD54D6007A1768 /* ScrumApp.swift in Sources */,
+				092FE52927DD597B007A1768 /* CardView.swift in Sources */,
+				092FE52727DD56CB007A1768 /* DailyWorkout.swift in Sources */,
+				092FE52B27DD73CA007A1768 /* TrailingIconLabelStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

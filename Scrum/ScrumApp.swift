@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct ScrumApp: App {
+    
     var body: some Scene {
+       
         WindowGroup {
-            ContentView()
+            NavigationView {
+                WorkoutView(workouts: DailyWorkout.sampleData)
+            }
         }
     }
 }
+
